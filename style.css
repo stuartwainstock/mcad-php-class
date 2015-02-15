@@ -537,71 +537,23 @@ a:active {
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+.menu-main-nav-container {
+	position: relative;
+	text-align: center;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 2em;
 }
 
-.main-navigation ul {
+.menu-main-nav-container ul {
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
+	padding: 0;
 }
 
-.main-navigation li {
-	float: left;
-	position: relative;
-}
-
-.main-navigation a {
-	display: block;
-	text-decoration: none;
-}
-
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 1.5em;
-	left: -999em;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul ul li {
-
-}
-
-.main-navigation li:hover > a {
-}
-
-.main-navigation ul ul :hover > a {
-}
-
-.main-navigation ul ul a:hover {
-}
-
-.main-navigation ul li:hover > ul {
-	left: auto;
-}
-
-.main-navigation ul ul li:hover > ul {
-	left: 100%;
-}
-
-.main-navigation .current_page_item > a,
-.main-navigation .current-menu-item > a,
-.main-navigation .current_page_ancestor > a {
+.menu-main-nav-container ul li {
+	margin: 0;
+	display: inline;
 }
 
 /* Small menu. */
@@ -749,12 +701,29 @@ a:active {
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
+.site{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .sticky {
 	display: block;
 }
 
 .hentry {
 	margin: 0 0 1.5em;
+}
+
+.entry-title{
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 }
 
 .byline,
@@ -906,7 +875,7 @@ object {
 	display: block;
 }
 /*--------------------------------------------------------------
-13 Utilities
+13. Utilities
 --------------------------------------------------------------*/
 .invisible{
 	border: 0;
@@ -917,4 +886,13 @@ object {
 	padding: 0;
 	position: absolute;
 	width: 1px;
+}
+
+.clearfix:after,
+.clearfix:before {
+     content: " ";
+     display: table;
+     }
+.clearfix:after{
+	clear: both;
 }
