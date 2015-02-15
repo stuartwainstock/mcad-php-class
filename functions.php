@@ -102,6 +102,10 @@ add_action( 'widgets_init', 'mcad_php_class_widgets_init' );
 function mcad_php_class_scripts() {
 	wp_enqueue_style( 'mcad-php-class-style', get_stylesheet_uri() );
 
+	wp_enqueue_script( 'josefin', 'http://use.edgefonts.net/josefin-slab.js', false, false, false);
+
+	wp_enqueue_script( 'merriweather', 'http://use.edgefonts.net/merriweather.js', false, false, false);
+
 	wp_enqueue_script( 'mcad-php-class-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'mcad-php-class-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
