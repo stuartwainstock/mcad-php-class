@@ -595,6 +595,37 @@ a:active {
 }
 
 /*--------------------------------------------------------------
+5.3 Layout
+--------------------------------------------------------------*/
+.content-area{
+	float: left;
+	width: 75%;
+}
+.widget-area{
+	float: left;
+	width: 20%;
+	padding-left: 2em;
+}
+footer {
+	font-size: .8em;
+	border-top: 1px dotted #ccc;
+	margin-top: 2em;
+	padding-top: 2em;
+	padding-bottom: 5em;
+}
+
+footer h1 {
+	font-family: merriweather, serif;
+	font-weight: 700;
+	font-size: 1em;
+	text-align: left;
+}
+
+footer p {
+	line-height: .5;
+}
+
+/*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
